@@ -1,0 +1,96 @@
+{
+    "user": {
+        "name": "string",
+        "email": "string",
+        "password": "string",
+        "phoneNumber": "string",
+        "firstName": "string",
+        "lastName": "string",
+        "role":"admin | user"
+    },
+    "prize":{
+        "name":"string",
+        "description":"string",
+        "donator": {
+            "donorId":"string",
+            "name":"string",
+            "company":"string"
+        },
+        "imageUrl":"string",
+        "quantity":"number",
+        "category": {
+            "categoryId":"string",
+            "categoryName":"string"
+        }
+    },
+    "donor": {
+        "name":"string",
+        "company":"string",
+        "email":"string",
+        "phoneNumber":"string",
+        "address":"string",
+        "prizes": [{ "prizeId": "string", "name": "string" }]
+    },
+    "category": {
+        "categoryId":"string",
+        "categoryName":"string"
+    },
+    "order": {
+        "user": {
+            "name": "string",
+            "email": "string",
+            "phoneNumber": "string",
+            "firstName": "string",
+            "lastName": "string"
+        },
+        "prize": [{
+            "name":"string",
+            "description":"string",
+            "imageUrl":"string"
+        }], 
+        "packages":[{
+            "packageName":"string",
+            "quantity":"number"
+        }],
+        "date":"date",
+        "totalPrice":"number"
+    },
+    "package": {
+        "packageName":"string",
+        "numberOfTickets":"number",
+        "price":"number"
+    },
+    "ticket": {
+        "userId":"string",
+        "prizeId":"string"
+    },
+    "winner":{
+        "user":{
+            "name": "string",
+            "email": "string",
+            "phoneNumber": "string",
+            "firstName": "string",
+            "lastName": "string"
+        }, 
+        "prize":{
+            "name":"string",
+            "description":"string",
+            "imageUrl":"string"
+        }
+    },
+    "cart": {
+        "userId":"string",
+        "cartItems":[
+            {
+                "prize": {
+                    "name":"string",
+                    "description":"string",
+                    "imageUrl":"string"
+                },
+                "qty":"number"
+
+            }
+        ]
+    }
+
+}

@@ -1,0 +1,7 @@
+db.orders.find({"totalPrice": {$lt: 100}})
+db.users.find({ firstName: { $regex: /^M/ } })
+db.prizes.find({$and : [ {"quantity":1}, {"donator.donorId":"27"}]})
+db.packages.find({$or : [ {"numberOfTIckets": {$lt: 30}}, {"price":{$lt: 50}}]})
+
+
+db.orders.aggregate([{$group: { _id:null, "totalPrice": {$sum:"$totalPrice"}}}])
